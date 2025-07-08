@@ -42,8 +42,6 @@ if __name__ == "__main__":
     print(f"Numero di classi dentro al dataset: {len(class_names)}")
     print(f"Le classi sono {class_names}")
     
-
-
     #
     # ANALISI DEL DATASET: CONTARE QUANTE IMMAGINI SONO PRESENTI PER OGNI CLASSE, VISUALIZZAZIONI
     #
@@ -68,7 +66,6 @@ if __name__ == "__main__":
     ds_train = ds_train.batch(batch_size)
 
     # VISUALIZZAZIONE DI ALCUNE IMMAGINI DEL DATASET
-
     # Visualizza alcune immagini dal dataset Fashion MNIST
     
         # Visualizza alcune immagini dal dataset Fashion MNIST
@@ -80,7 +77,6 @@ if __name__ == "__main__":
         plt.axis("off")
     plt.tight_layout()
     plt.show()
-
 
     # Creazione del dataframe delle analisi
     # heatmap del training set
@@ -106,8 +102,6 @@ if __name__ == "__main__":
     plt.title("Numero di immagini per categoria")
     plt.tight_layout()
     plt.show()
-
-
 
 
     #
@@ -280,7 +274,6 @@ if __name__ == "__main__":
     # Crazione del dataframe con le metriche di allenamento
     history_df = pd.DataFrame(history.history)
     print(history_df.columns)  # Mostra le colonne del dataframe
-    
     
     # Creazione dei grafici
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(15, 5))
